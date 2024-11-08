@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+@font-face {
+  font-family: "M";
+  src: url(../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf),
+    url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+  /* src: url("fonts/Montserrat") format("woff2"),
+    url("fonts/MyCustomFont.woff") format("woff"),
+    url("fonts/MyCustomFont.ttf") format("truetype"); */
+  font-weight: normal;
+  font-style: normal;
+}
