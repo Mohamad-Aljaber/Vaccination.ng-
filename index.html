@@ -56,73 +56,176 @@
   </head>
   <body>
     <!-- Start Header  -->
-    <main>
-      <section class="bg-primary col-white bg-photo">
-        <header>
-          <div class="container flex f-jus f-alignCenter f-wrap">
-            <h2 class="logo">Vaccination.ng</h2>
-            <img
-              src="../icons/menu.svg"
-              alt=""
-              class="toggleButton"
-              data-target="nav"
-              id="menu"
-            />
-            <ul
-              class="gap none flex"
-              id="nav"
-            >
-              <li class="active">
-                <a
-                  href=""
-                  class="col-white"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a
-                  href=""
-                  class="col-white"
-                  >Services</a
-                >
-              </li>
-              <li>
-                <a
-                  href=""
-                  class="col-white"
-                  >Schedule</a
-                >
-              </li>
-              <li>
-                <a
-                  href=""
-                  class="col-white"
-                  >Contact us</a
-                >
-              </li>
-            </ul>
-            <button class="btn none">Check Status</button>
+    <main class="bg-primary col-white bg-photo">
+      <header>
+        <div class="container flex f-jus f-alignCenter f-wrap">
+          <h2 class="logo">Vaccination.ng</h2>
+          <img
+            src="../icons/menu.svg"
+            alt=""
+            class="toggleButton"
+            data-target="nav"
+            id="menu"
+          />
+          <ul
+            class="gap none flex"
+            id="nav"
+          >
+            <li class="active">
+              <a
+                href=""
+                class="col-white"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="col-white"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="col-white"
+                >Schedule</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="col-white"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+          <button class="btn none col-secondary">Check Status</button>
+        </div>
+      </header>
+      <section>
+        <div class="container">
+          <div class="flex f-col f-alignStart f-jus">
+            <p class="col-secondary f-w">
+              Get Vaccinated. Boost your Immune System
+            </p>
+            <h1 class="my-2">
+              COVID-19 Vaccination<br />
+              Got Easier With,<br />
+              <span class="col-secondary"> Vaccination.ng</span>
+            </h1>
+            <p class="f-w col-grey">
+              Vaccination.ng will help you find the nearest centre for
+              vaccination, in all 36 states in Nigeria.
+            </p>
+            <div class="my-4">
+              <button class="btn col-white btn-bgSecondary">Get Vaccine</button>
+              <button class="btn col-white btn-borderS">Help Centre</button>
+            </div>
           </div>
-        </header>
+          <div class="image">
+            <img
+              src="images/image.png"
+              alt=""
+            />
+            <div class="image-Doctors flex f-w">
+              <div class="mr-3">
+                <img
+                  src="/images/image-doctor1.png"
+                  alt=""
+                />
+                <img
+                  src="/images/image-doctor2.png"
+                  alt=""
+                />
+                <img
+                  src="/images/image-doctor3.png"
+                  alt=""
+                />
+              </div>
+              <p>20+ <br /><span class="col-secondary">Specialists</span></p>
+            </div>
+          </div>
+          <div>
+            <div class="flex f-alignCenter f-w my-2">
+              <svg class="icon">
+                <use xlink:href="../icons/SVGSprite.svg#click"></use>
+              </svg>
+              <p>Schedule your Vaccination</p>
+            </div>
+            <div class="card f-w p-c1 flex f-wrap f-alignCenter">
+              <div class="flex my-2 w-card">
+                <svg class="icon">
+                  <use xlink:href="../icons/SVGSprite.svg#location"></use>
+                </svg>
+                <div>
+                  <h3 class="col-grey">Location</h3>
+                  <p>Ikeja Lagos, Nigeria</p>
+                </div>
+              </div>
+              <div class="flex my-2 w-card">
+                <img
+                  src="/icons/calendar.svg"
+                  alt=""
+                  srcset=""
+                  class="icon"
+                />
+
+                <div>
+                  <h3 class="col-grey">Date</h3>
+                  <p>29 February, 2022</p>
+                </div>
+              </div>
+              <div class="flex my-2 w-card mr-3">
+                <svg class="icon">
+                  <use xlink:href="../icons/SVGSprite.svg#location"></use>
+                </svg>
+                <div>
+                  <h3 class="col-grey">Vaccine Type</h3>
+                  <p>Mordena</p>
+                </div>
+              </div>
+              <button class="w-card btn col-white btn-bgSecondary">
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
+      <!--  -->
+      <section>
+        <div class="contaner">
+          <div class="bg-white flex f-jus f-alignCenter p-c1">
+            <img
+              class="w-25"
+              src="/images/Sinov8c.png"
+              alt=""
+            />
+            <img
+              class="w-25"
+              src="/images/AstraZeneca.png"
+              alt=""
+            />
+            <img
+              class="w-25"
+              src="/images/Pfizer_(2021).png"
+              alt=""
+            />
+            <img
+              class="w-25"
+              src="/images/Moderna_logo.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <!--  -->
+      <section>
+        <div class="container"></div>
+      </section>
+      <!--  -->
     </main>
-    <!-- End Header  -->
-    <script>
-      const toggleButtons = document.querySelectorAll(".toggleButton");
-      toggleButtons.forEach(button => {
-        button.addEventListener("click", function () {
-          const targetId = button.getAttribute("data-target");
-          const targetElement = document.getElementById(targetId);
-          if (
-            targetElement.style.display === "none" ||
-            targetElement.style.display === ""
-          ) {
-            targetElement.style.display = "block";
-          } else {
-            targetElement.style.display = "none";
-          }
-        });
-      });
-    </script>
+
+    <script src="js/ShowItems.js"></script>
   </body>
 </html>
