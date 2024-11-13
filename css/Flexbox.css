@@ -1,0 +1,19 @@
+.flex {
+  display: flex;
+}
+.f-col {
+  flex-direction: column;
+}
+.f-alignCenter {
+  align-items: center;
+}
+.f-jus {
+  justify-content: space-between;
+}
+.gap {
+  gap: 25px;
+  color: #ffffff;
+}
+.f-wrap{
+  flex-wrap: wrap;
+}

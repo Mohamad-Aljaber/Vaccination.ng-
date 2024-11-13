@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Toggle Multiple Elements</title>
+    <style>
+      /* إخفاء جميع الأقسام في البداية */
+      .content {
+        display: none;
+        background-color: #f3f3f3;
+        padding: 10px;
+        border: 1px solid #ccc;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- الأزرار (الأيقونات) -->
+    <button
+      class="toggleButton"
+      data-target="content1"
+    >
+      ☰ Toggle Content 1
+    </button>
+    <button
+      class="toggleButton"
+      data-target="content2"
+    >
+      ☰ Toggle Content 2
+    </button>
+    <button
+      class="toggleButton"
+      data-target="content3"
+    >
+      ☰ Toggle Content 3
+    </button>
+
+    <!-- الأقسام التي سيتم عرضها أو إخفاؤها -->
+    <div
+      id="content1"
+      class="content"
+    >
+      <p>This is the content for section 1!</p>
+    </div>
+    <div
+      id="content2"
+      class="content"
+    >
+      <p>This is the content for section 2!</p>
+    </div>
+    <div
+      id="content3"
+      class="content"
+    >
+      <p>This is the content for section 3!</p>
+    </div>
+
+    <script>
+      const toggleButtons = document.querySelectorAll(".toggleButton");
+      toggleButtons.forEach(button => {
+        button.addEventListener("click", function () {
+          const targetId = button.getAttribute("data-target");
+          const targetElement = document.getElementById(targetId);
+          if (
+            targetElement.style.display === "none" ||
+            targetElement.style.display === ""
+          ) {
+            targetElement.style.display = "block";
+          } else {
+            targetElement.style.display = "none";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
