@@ -6,15 +6,15 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
-.bg-primary {
-  background-color: var(--primary-color);
-}
 
 ul {
   list-style-type: none;
 }
 a {
   text-decoration: none;
+}
+.relative {
+  position: relative;
 }
 .icon {
   width: 3rem;
@@ -24,7 +24,11 @@ a {
   border-radius: 2rem;
   margin-right: 1rem;
 }
-
+.bg-photo {
+  background-image: url(/images/background1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /* buttons */
 .btn {
   width: 13.8rem;
@@ -78,15 +82,15 @@ header ul li a:hover {
 header img {
   width: 45px;
 }
-section .image {
+.s-1 .image {
   position: relative;
   margin: auto;
   width: 256px;
 }
-section .image > img {
+.s-1 .image > img {
   width: 100%;
 }
-section .image::after {
+.s-1 .image::after {
   content: "";
   background-image: url(../images/coronavirus.png);
   background-size: 4rem;
@@ -102,7 +106,7 @@ section .image::after {
   padding: 0.5rem 0.5rem;
   border-radius: 1rem;
 }
-section .image::before {
+.s-1 .image::before {
   content: "";
   background-image: url(../images/doctor-taking-safety.png);
   background-size: 4rem;
@@ -141,10 +145,10 @@ section .image::before {
   width: 100%;
 }
 .p-c1 {
-  padding: 2rem 1rem;
+  padding: 3rem 2rem;
 }
 .my-2 {
-  margin: 2rem auto;
+  margin: 2rem 0;
 }
 @media screen and (max-width: 1023px) {
   header #nav {
@@ -163,11 +167,7 @@ section .image::before {
   #menu {
     display: none;
   }
-  .bg-photo {
-    background-image: url(/images/background1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+
   .active::after {
     content: "";
     position: absolute;
@@ -177,6 +177,18 @@ section .image::before {
     border-radius: 100%;
     background-color: var(--secondary-color);
     bottom: -20px;
+  }
+  .Page-split {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .f-basis {
+    flex-basis: 55%;
+  }
+  .f-basis2 {
+    flex-basis: 40%;
   }
 }
 /* media buttoms */
@@ -209,17 +221,17 @@ section .image::before {
   .w-card {
     width: 47%;
   }
-  section .image {
+  .s-1 .image {
     width: 53.5rem;
   }
-  section .image::after {
+  .s-1 .image::after {
     background-size: 10rem;
     width: 10rem;
     height: 10rem;
     transform: translate(40%, -100%);
     border-radius: 2rem;
   }
-  section .image::before {
+  .s-1 .image::before {
     background-size: 10rem;
     width: 10rem;
     height: 10rem;
@@ -244,5 +256,357 @@ section .image::before {
   .icon {
     width: 5rem;
     height: 5rem;
+  }
+}
+/* Section 3 */
+
+.s-3 p:first-of-type {
+  width: 100%;
+  text-align: center;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-bottom: 2rem;
+}
+.s-3 p:last-of-type {
+  width: 90%;
+
+  text-align: center;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+}
+input {
+  width: 300px;
+  background-color: var(--op-20);
+  padding: 1.6rem 2.2rem;
+  border-radius: 20px;
+  color: wheat;
+  border: none;
+}
+input:focus {
+  color: var(--secondary-color);
+  outline: none;
+  border: 2px solid var(--secondary-color);
+}
+/* media input section 3 */
+@media (min-width: 768px) {
+  input {
+    width: 500px;
+  }
+}
+@media (min-width: 1024px) {
+  input {
+    width: 400px;
+  }
+}
+/* s-4 */
+.s-4 {
+  padding-bottom: 5rem;
+}
+.s-4 .container > div:first-of-type > * {
+  width: 50rem;
+}
+.s-4 .cards .card {
+  height: 280px;
+  border-radius: 2rem;
+  border-start-end-radius: 8rem;
+  width: 27.6rem;
+}
+.card-secound {
+  border: 2px solid var(--grey-color);
+  width: 188px;
+  height: 20rem;
+  border-radius: 2rem;
+}
+@media (min-width: 768px) {
+  .s-4 .cards .card {
+    width: 45.6rem;
+    height: 49.8rem;
+  }
+  .card-secound {
+    width: 30rem;
+    height: 29rem;
+  }
+}
+/* section 5 */
+.s-5 {
+  color: black;
+  padding: 5rem 0;
+}
+.s-5 .container > div {
+  position: relative;
+  width: 28.6rem;
+  height: 41rem;
+  border-radius: 2rem;
+}
+.s-5 .container > div img {
+  width: 100%;
+  height: 36.5rem;
+  border-radius: 2rem;
+}
+.s-5 .container > div h2 {
+  position: absolute;
+  width: 9rem;
+  top: 3rem;
+  left: 35%;
+}
+.s-5 .container > div:first-of-type::before {
+  content: "";
+  background-image: url(../images/coronavirus2.png);
+  background-size: 7rem;
+  width: 7rem;
+  height: 7rem;
+  position: absolute;
+  top: -2rem;
+  left: -2rem;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.s-5 .container > div div {
+  position: absolute;
+  bottom: 5rem;
+  left: 5rem;
+  width: 18rem;
+  background-color: #c4c4c440;
+  color: white;
+  height: 5rem;
+  border-radius: 1rem;
+}
+.s-5 form > * {
+  padding: 1rem 0;
+}
+.s-5 input {
+  background-color: #0b153c26;
+  color: black;
+}
+.s-5 input[type="number"] {
+  position: relative;
+  overflow: hidden;
+  padding-left: 9rem;
+}
+.s-5 .relative::before {
+  content: "";
+  background-image: url(../images/flag.png);
+  background-size: 5rem;
+  width: 21%;
+  height: 100%;
+  position: absolute;
+  top: 0rem;
+  left: 1rem;
+  background-position: left;
+  background-repeat: no-repeat;
+  border-right: 2px solid #949494;
+}
+/* section 5 */
+@media (min-width: 768px) {
+  .s-5 input {
+    width: 400px;
+  }
+  .s-5 .container > div {
+    width: 38rem;
+    height: 55rem;
+    border-radius: 2rem;
+  }
+  .s-5 .container > div:first-of-type::before {
+    background-size: 9.8rem;
+    width: 9.8rem;
+    height: 9.8rem;
+    position: absolute;
+    top: -4rem;
+    left: -4rem;
+  }
+  .s-5 .container > div h2 {
+    position: absolute;
+    width: 14rem;
+    top: 6rem;
+    left: 35%;
+  }
+  .s-5 .container > div img {
+    height: 48rem;
+  }
+  .s-5 .container > div div {
+    bottom: 12rem;
+    left: 11rem;
+  }
+}
+@media (min-width: 1200px) {
+  .s-5 .container > div div {
+    position: absolute;
+    bottom: 5rem;
+    left: 5rem;
+    width: 18rem;
+    background-color: #c4c4c440;
+    color: white;
+    height: 5rem;
+    border-radius: 1rem;
+  }
+}
+/* section 6 */
+.s-6 {
+  position: relative;
+}
+.s-6 .container .image {
+  position: relative;
+}
+.s-6 .container .image img {
+  width: 20rem;
+}
+.s-6 .info {
+  position: relative;
+  padding: 0.5rem 1.3rem;
+  width: fit-content;
+  width: 108px;
+  padding-left: 2.3rem;
+}
+
+.s-6 .info::before {
+  content: "";
+  background-image: url(/images/coronavirus.png);
+  background-size: 3rem;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  top: -0.05rem;
+  left: -1rem;
+  background-repeat: no-repeat;
+}
+.s-6 .contant1 {
+  position: absolute;
+  top: 0;
+  width: 126%;
+  left: -2rem;
+}
+.s-6 .contant2 {
+  position: absolute;
+  top: 5rem;
+  width: 144%;
+  left: -4rem;
+}
+.s-6 .contant3 {
+  position: absolute;
+  top: 10rem;
+  width: 171%;
+  left: -7rem;
+}
+
+@media (min-width: 768px) {
+  .s-6 .container .image img {
+    width: 46rem;
+  }
+  .s-6 .info {
+    width: 25.7rem;
+  }
+  .s-6 .contant1 {
+    left: -4rem;
+    top: 5rem;
+  }
+  .s-6 .contant2 {
+    left: -8rem;
+    top: 15rem;
+  }
+  .s-6 .contant3 {
+    width: 157%;
+    left: -12rem;
+    top: 25rem;
+  }
+}
+@media (min-width: 992px) {
+  .s-6 .container .image img {
+    width: 55rem;
+  }
+  .s-6 .info {
+    width: 25.7rem;
+  }
+  .s-6 .contant1 {
+    left: -4rem;
+    top: 10rem;
+  }
+  .s-6 .contant2 {
+    left: -8rem;
+    top: 20rem;
+  }
+  .s-6 .contant3 {
+    width: 157%;
+    left: -12rem;
+    top: 30rem;
+  }
+}
+/* section 7 */
+
+.s-7 .cards {
+  width: 100%;
+}
+.s-7 .cards .card {
+  background-color: #c4c4c480;
+  padding: 3rem 2rem;
+
+  height: 19rem;
+}
+.s-7 .cards .card p {
+  color: #00000099;
+  font-weight: 500;
+}
+.s-7 .cards .card img {
+  width: 5rem;
+  border-radius: 1rem;
+}
+
+@media (min-width: 768px) {
+  .s-7 .cards .card {
+    height: 25rem;
+  }
+}
+@media (min-width: 1400px) {
+  .g-cards {
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+  }
+}
+footer {
+  padding-bottom: 3rem;
+}
+footer .box {
+  width: 85%;
+  margin: auto;
+  position: relative;
+  top: -8rem;
+  margin: 8rem auto;
+  border-radius: 2rem;
+  padding: 4rem 2rem;
+  box-shadow: 0px 0px 0px 17px var(--op-20);
+}
+footer .box input {
+  background-color: white;
+}
+footer .relative {
+  position: relative;
+}
+footer .box input {
+  width: 25rem;
+}
+footer .icon-f {
+  position: absolute;
+  top: 0;
+  right: -9px;
+  background: var(--primary-color);
+  height: 100%;
+  width: 23%;
+  padding: 1.2rem;
+  border-start-end-radius: 2rem;
+  border-end-end-radius: 2rem;
+}
+footer > .container {
+  margin-top: -12rem;
+}
+@media (min-width: 768px) {
+  footer .box input {
+    width: 45rem;
+  }
+  footer > .container {
+    margin-top: -8rem;
+  }
+}
+@media (min-width: 992px) {
+  footer .box input {
+    width: 55rem;
   }
 }

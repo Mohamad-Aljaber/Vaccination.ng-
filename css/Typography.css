@@ -42,8 +42,33 @@ body {
 .my-4 {
   margin: 4rem 0;
 }
+.my-10 {
+  margin: 10rem 0;
+}
+.m-a{
+  margin: auto;
+}
 .bg-white {
   background-color: var(--white-color);
+}
+.bg-opcity {
+  background-color: #c4c4c40d;
+  border-radius: 2rem;
+}
+.bg-primary {
+  background-color: var(--primary-color);
+}
+.bg-secondary{
+  background-color: var(--secondary-color);
+}
+.f-sm {
+  font-size: 1rem;
+}
+.text-center {
+  text-align: center;
+}
+.in-b {
+  display: block;
 }
 @media (min-width: 768px) {
   h1 {

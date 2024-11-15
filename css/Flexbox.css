@@ -10,13 +10,21 @@
 .f-alignStart {
   align-items: start;
 }
+.f-alignEnd {
+  align-items: end;
+}
 .f-jus {
   justify-content: space-between;
 }
+.f-jusC {
+  justify-content: center;
+}
+.f-jusA {
+  justify-content: space-around;
+}
 .gap {
   gap: 25px;
-  color: #ffffff;
 }
-.f-wrap{
+.f-wrap {
   flex-wrap: wrap;
 }
