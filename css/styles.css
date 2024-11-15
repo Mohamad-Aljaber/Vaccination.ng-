@@ -6,7 +6,10 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
-
+.container {
+  width: 90%;
+  margin: auto;
+}
 ul {
   list-style-type: none;
 }
@@ -76,7 +79,7 @@ header {
   position: relative;
 }
 
-header ul li a:hover {
+ul li a:hover {
   color: var(--secondary-color);
 }
 header img {
@@ -609,4 +612,16 @@ footer > .container {
   footer .box input {
     width: 55rem;
   }
+}
+footer div svg:nth-child(1):hover {
+  background-color: #0d62fd;
+}
+footer div svg:nth-child(2):hover {
+  background-color: #3f82fe;
+}
+footer div svg:nth-child(3):hover {
+  background-color: red;
+}
+footer div svg:nth-child(4):hover {
+  background-color: #fb0b4d;
 }

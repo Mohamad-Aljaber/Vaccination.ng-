@@ -53,6 +53,11 @@
       href="css/styles.css"
     />
     <title>Vaccination.ng</title>
+    <!-- Animate On Scroll Library (AOs) -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/aos@next/dist/aos.css"
+    />
   </head>
   <body>
     <!-- Start Header  -->
@@ -200,7 +205,10 @@
       </section>
       <!-- end Section 1 -->
       <!-- start Section 2 -->
-      <section>
+      <section
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
         <div class="contaner">
           <div class="bg-white flex f-jus f-alignCenter p-c1">
             <img
@@ -228,9 +236,15 @@
       </section>
       <!-- End Section 2 -->
       <!-- start Section 3 -->
-      <section class="s-3 my-10">
+      <section
+        class="s-3 my-10"
+        data-aos="fade-up"
+      >
         <div class="container">
-          <div class="card f-w flex f-wrap f-alignCenter f-jusC my-4">
+          <div
+            class="card f-w flex f-wrap f-alignCenter f-jusC my-4"
+            data-aos="fade-right"
+          >
             <p class="p-c1 bg-opcity my">
               Check your COVID-19 result on our Database
             </p>
@@ -256,7 +270,10 @@
           </div>
         </div>
       </section>
-      <section class="s-4 my-10">
+      <section
+        class="s-4 my-10"
+        data-aos="fade-up-right"
+      >
         <div class="container">
           <div class="flex f-jus f-wrap f-alignCenter my-4">
             <h1>Why get vaccinated today?</h1>
@@ -297,7 +314,11 @@
           </div>
         </div>
       </section>
-      <section class="s-5 bg-white my-4">
+      <section
+        class="s-5 bg-white my-4"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
         <div class="container flex f-jusC f-alignCenter f-wrap gap">
           <h1 class="text-center">Get your vaccine registration today</h1>
           <div class="bg-primary flex f-alignEnd">
@@ -353,7 +374,11 @@
           </form>
         </div>
       </section>
-      <section class="s-6 my-4">
+      <section
+        class="s-6 my-4"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
         <div class="container flex f-col f-jusC f-alignCenter">
           <p class="f-w">Covid-19 Prevention</p>
           <h1><span class="col-secondary">COVID-19</span> Symptoms</h1>
@@ -390,7 +415,11 @@
         </div>
       </section>
 
-      <section class="s-7 bg-white">
+      <section
+        class="s-7 bg-white"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
         <div
           class="container flex f-alignCenter f-jusA f-col"
           style="color: black"
@@ -460,7 +489,11 @@
         </div>
       </section>
     </main>
-    <footer class="bg-photo">
+    <footer
+      class="bg-photo"
+      data-aos="fade-up"
+      data-aos-anchor-placement="bottom-bottom"
+    >
       <div class="box col-white bg-secondary">
         <div class="container flex f-col gap f-alignCenter f-jusA">
           <h2>Get a quote</h2>
@@ -527,5 +560,9 @@
       </div>
     </footer>
     <script src="js/ShowItems.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
